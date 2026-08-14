@@ -1,6 +1,6 @@
 # script-changes
 
-
+These instructions assume that you have Python, python virtual environments, and nvm installed on your machine.
 
 ## Initial Set Up
 1) Clone the repo 
@@ -33,10 +33,18 @@
 Note: if you run into issues with the dependencies try running the following code but replace pandas withe the library that is causing issues ```pip install google-cloud-bigquery[pandas]```
 
 
-[TODO] general analysis
+### general analysis
 
 
 * run python3 make_materialized_views.py
 * run python3 generate_overlap_summary.py
 * run python3 generate_overlap_window_change_counts.py
 * run python3 other_db_searches.py
+
+* run overlap_plotting.ipynb
+* run summary_stats.ipynb
+
+### sat analysis
+
+* create a python 3.14 virtual environment using the requirements in the /code/httparchive/analysis/ast/requirements.txt file and activate that 
+* in this virtual enviormnent run ```nvm install 22``` and then  ```nvm use 22``` 
